@@ -1,0 +1,19 @@
+
+.container{
+    width: 900px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin: auto;
+}
+app-card {
+    width: 200px;
+    min-height: 350px;     
+    float: left;
+    padding: 10px;
+    margin: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   
+}

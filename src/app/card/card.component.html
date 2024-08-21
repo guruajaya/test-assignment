@@ -1,0 +1,8 @@
+<h2 class="text-center">{{products.category  | titlecase}}</h2>
+<div class="app-card">
+    <img [src]='products.image' class="img-size">    
+    <p class="product-price"> $ {{products.price}}</p>
+    <p class="text-left">Count : {{products.rating.count}} <span> Rating : {{products.rating.rate}}</span></p>   
+    <div class="text-left">{{products.description | truncateWords | titlecase}}</div>
+        
+</div>
