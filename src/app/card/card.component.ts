@@ -1,7 +1,7 @@
 
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { TruncateWordsPipe } from '../truncate-words.pipe';
+import { TruncateWordsPipe } from '../pipes/truncate-words.pipe';
 
 
 @Component({

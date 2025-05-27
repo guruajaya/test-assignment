@@ -1,0 +1,63 @@
+<div class="container mt-5">
+    <div class="row">
+    <div class="col-md-4 border">
+      <h3 class="text-center p-2">Registraion form</h3>
+        <form>    
+          <div class="mb-3">
+            <label class="form-label">First Name</label>
+            <input type="email" class="form-control">            
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Last Name</label>
+            <input type="text" class="form-control" >
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Job Title</label>
+            <input type="email" class="form-control">            
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email Id</label>
+            <input type="text" class="form-control" >
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Gender</label>
+            <input type="text" class="form-control" >
+          </div>
+          
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" >
+            <label class="form-check-label">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-8 border">
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Mail id</th>
+                <th scope="col">Job Title</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of listuser">
+                <th scope="row">{{user.first_name}}</th>
+                <td>{{user.last_name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.job_title}}</td>
+                <td>{{user.gender}}</td>
+                <td><button class="btn btn-primary btn-sm pr-2 mr-5">Edit</button>
+                  <button class="btn btn-danger btn-sm mr-5 ml-5" (click)="deleteIitem(user.id)">Delete</button></td>
+              </tr>
+              
+            </tbody>
+          </table>
+          
+         
+      </div>
+      </div>
+    </div>

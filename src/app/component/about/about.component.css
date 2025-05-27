@@ -1,0 +1,11 @@
+
+app-card {
+    width: 200px;
+    height: 387px;
+    min-height: 300px;     
+    float: left;
+    padding: 10px;
+    margin: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   
+}
